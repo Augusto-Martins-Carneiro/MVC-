@@ -63,17 +63,6 @@ Durante o desenvolvimento, foram trabalhados conceitos importantes como:
 
 ---
 
-🚀 Possíveis melhorias
-
-Como evolução do projeto, seria possível adicionar:
-
-- Imagens dos lanches
-- Sistema de busca
-- Integração com backend
-- Uso de banco de dados
-
----
-
 Uso da IA
 
 O uso da IA dessa vez foi menor, eu utilizei bastante os exemplos feito em aula, e utilizei a IA para correção de código e para estruturar um pouco este README.md.
