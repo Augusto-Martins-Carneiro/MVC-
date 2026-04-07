@@ -1,28 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>CRUD de Lanches</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lancharia</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <div class="container">
-    <h1>🍔 Siri Cascudo</h1>
-
-    <input type="text" id="nome" placeholder="Nome do lanche">
-    <input type="number" id="preco" placeholder="Preço">
-    <input type="text" id="ingredientes" placeholder="Ingredientes (separados por vírgula)">
-
-    <button id="btnSalvar">Salvar</button>
-
-    <h2>📋 Lista de Lanches</h2>
-    <div id="lista"></div>
-  </div>
-
-  <!-- IMPORTANTE: apenas esse script -->
-  <script type="module" src="./JS/controller.js"></script>
-
+    <header>
+        <h1>Welcome to Our Lancharia</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <h2>Your Favorite Snacks Delivered</h2>
+        <p>Enjoy our delicious snacks anywhere, anytime!</p>
+    </section>
+    <section id="add-snack">
+        <h3>Add a Snack</h3>
+        <form action="/add-snack" method="POST">
+            <label for="snack-name">Snack Name:</label>
+            <input type="text" id="snack-name" name="name" required>
+            <label for="snack-image">Image URL:</label>
+            <input type="url" id="snack-image" name="image" required>
+            <button type="submit">Add Snack</button>
+        </form>
+    </section>
+    <section id="gallery">
+        <h3>Snack Gallery</h3>
+        <div class="gallery">
+            <!-- Snack images will be dynamically generated here -->
+            <img src="snack-image-1.jpg" alt="Snack 1"> 
+            <img src="snack-image-2.jpg" alt="Snack 2"> 
+            <img src="snack-image-3.jpg" alt="Snack 3"> 
+            <!-- Add more images as necessary -->
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2026 Lancharia. All rights reserved.</p>
+    </footer>
 </body>
 </html>
-
